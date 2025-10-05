@@ -10,18 +10,13 @@ Awarded by the Vice President of Evaluation Operations for outstanding performan
 
 >“Overall, the student's project submission is excellent in that it is an example of quality in work, considering the provided requirements. The backend is informative and organized, while the frontend is easy to use and functional. Excellent job!”
 
-<details>
-  <summary>View Award (Click to Expand)</summary>
-
-![Award](award/Software_2_Java_Award.pdf)
-
-</details>
+![Award (PDF)](docs/Software_2_Java_Award.pdf)
 
 ---
 
 ## Features
 
-This full-featured Java application allows users to maintain a robust database of customers and appointments — **complete with support for all time zones and 15 languages**
+This Java application allows users to maintain a robust database of customers and appointments — **with support for all time zones and 15 languages**
 
 Additional features include:
 
