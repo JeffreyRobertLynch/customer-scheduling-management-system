@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ComboBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" prefHeight="580.0" prefWidth="540.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jrl.qam2final.Controller.AppointmentCreateController">
+    <children>
+        <TextField fx:id="appointmentNewIdTextField" disable="true" layoutX="180.0" layoutY="65.0" prefHeight="26.0" prefWidth="210.0" promptText="Disabled" />
+        <Label fx:id="appointmentNewIdLabel" text="Appointment ID" layoutX="70.0" layoutY="65.0">
+        </Label>
+        <Label fx:id="appointmentNewTitleLabel" text="Title" layoutX="70.0" layoutY="100.0">
+        </Label>
+        <TextField fx:id="appointmentNewTitleTextField" layoutX="180.0" layoutY="100.0" prefHeight="26.0" prefWidth="210.0" promptText="Title" text="Title"  />
+        <TextField fx:id="appointmentNewDescriptionTextField" layoutX="180.0" layoutY="135.0" prefHeight="26.0" prefWidth="210.0" promptText="Description" text="Description" />
+        <Label fx:id="appointmentNewDescriptionLabel" text="Description" layoutX="70.0" layoutY="135.0">
+        </Label>
+        <Label fx:id="appointmentNewLocationLabel" text="Location" layoutX="70.0" layoutY="170.0">
+        </Label>
+        <TextField fx:id="appointmentNewLocationTextField" layoutX="180.0" layoutY="170.0" prefHeight="26.0" prefWidth="210.0" promptText="Location" text="Location" />
+        <TextField fx:id="appointmentNewTypeTextField" layoutX="180.0" layoutY="205.0" prefHeight="26.0" prefWidth="210.0" promptText="Type" text="Type" />
+        <Label fx:id="appointmentNewTypeLabel" text="Type" layoutX="70.0" layoutY="205.0">
+        </Label>
+        <Label fx:id="appointmentNewStartDateLabel" text="Start Date" layoutX="70.0" layoutY="240.0">
+        </Label>
+        <DatePicker fx:id="appointmentNewStartDatePicker" layoutX="180.0" layoutY="240.0" prefWidth="210.0" promptText="Date" />
+        <ComboBox fx:id="newAppointmentStartComboBox" layoutX="180.0" layoutY="275.0" prefWidth="210.0" promptText="Time" visibleRowCount="5" />
+        <Label fx:id="appointmentNewStartTimeLabel" text="Start Time" layoutX="70.0" layoutY="275.0">
+        </Label>
+        <Label fx:id="appointmentNewEndDateLabel" text="End Date" layoutX="70.0" layoutY="310.0">
+        </Label>
+        <DatePicker fx:id="appointmentNewEndDatePicker" layoutX="180.0" layoutY="310.0" prefWidth="210.0" promptText="Date" />
+        <ComboBox fx:id="newAppointmentEndComboBox" layoutX="180.0" layoutY="345.0" prefWidth="210.0" promptText="Time" visibleRowCount="5" />
+        <Label fx:id="appointmentNewEndTimeLabel" text="End Time" layoutX="70.0" layoutY="345.0">
+        </Label>
+        <Label fx:id="appointmentNewCustomerLabel" text="Customer" layoutX="70.0" layoutY="380.0">
+        </Label>
+        <ComboBox fx:id="newAppointmentCustomerComboBox" layoutX="180.0" layoutY="380.0" prefWidth="210.0" promptText="Customer" visibleRowCount="5" />
+        <ComboBox fx:id="newAppointmentUserComboBox" layoutX="180.0" layoutY="415.0" prefWidth="210.0" promptText="User" visibleRowCount="5" />
+        <Label fx:id="appointmentNewUserLabel" text="User" layoutX="70.0" layoutY="415.0">
+        </Label>
+        <Label fx:id="appointmentNewContactLabel" text="Contact" layoutX="70.0" layoutY="450.0">
+        </Label>
+        <ComboBox fx:id="newAppointmentContactComboBox" layoutX="180.0" layoutY="450.0" prefWidth="210.0" promptText="Contact" visibleRowCount="5" />
+        <Button fx:id="onActionSaveNewAppointmentButton" layoutX="70.0" layoutY="532.0" mnemonicParsing="false" onAction="#onActionSaveCreatedAppointmentACC" prefHeight="26.0" prefWidth="80.0" text="Save" />
+        <Button fx:id="onActionCancelNewAppointmentButton" layoutX="180.0" layoutY="532.0" mnemonicParsing="false" onAction="#onActionCancelCreatedAppointmentACC" prefHeight="26.0" prefWidth="80.0" text="Cancel" />
+        <Label fx:id="newAppointmentTitleLabel" layoutX="70.0" layoutY="20.0" prefWidth="260.0" text="New Appointment">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

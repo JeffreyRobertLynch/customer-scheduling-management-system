@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" prefHeight="580.0" prefWidth="540.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jrl.qam2final.Controller.AppointmentUpdateController">
+    <children>
+        <TextField fx:id="appointmentUpdateIdTextField" disable="true" layoutX="180.0" layoutY="65.0" prefHeight="26.0" prefWidth="210.0" promptText="Disabled" />
+        <Label fx:id="appointmentUpdateIdLabel" text="Appointment ID" layoutX="70.0" layoutY="65.0">
+        </Label>
+        <Label fx:id="appointmentUpdateTitleLabel" text="Title" layoutX="70.0" layoutY="100.0">
+        </Label>
+        <TextField fx:id="appointmentUpdateTitleTextField" layoutX="180.0" layoutY="100.0" prefHeight="26.0" prefWidth="210.0" promptText="Title" text="Title"  />
+        <TextField fx:id="appointmentUpdateDescriptionTextField" layoutX="180.0" layoutY="135.0" prefHeight="26.0" prefWidth="210.0" promptText="Description" text="Description" />
+        <Label fx:id="appointmentUpdateDescriptionLabel" text="Description" layoutX="70.0" layoutY="135.0">
+        </Label>
+        <Label fx:id="appointmentUpdateLocationLabel" text="Location" layoutX="70.0" layoutY="170.0">
+        </Label>
+        <TextField fx:id="appointmentUpdateLocationTextField" layoutX="180.0" layoutY="170.0" prefHeight="26.0" prefWidth="210.0" promptText="Location" text="Location" />
+        <TextField fx:id="appointmentUpdateTypeTextField" layoutX="180.0" layoutY="205.0" prefHeight="26.0" prefWidth="210.0" promptText="Type" text="Type" />
+        <Label fx:id="appointmentUpdateTypeLabel" text="Type" layoutX="70.0" layoutY="205.0">
+        </Label>
+        <Label fx:id="appointmentUpdateStartDateLabel" text="Start Date" layoutX="70.0" layoutY="240.0">
+        </Label>
+        <DatePicker fx:id="appointmentUpdateStartDatePicker" layoutX="180.0" layoutY="240.0" prefWidth="210.0" promptText="Date" />
+        <ComboBox fx:id="appointmentUpdateStartComboBox" layoutX="180.0" layoutY="275.0" prefWidth="210.0" promptText="Time" visibleRowCount="5" />
+        <Label fx:id="appointmentStartTimeLabelUpdate" text="Start Time" layoutX="70.0" layoutY="275.0">
+        </Label>
+        <Label fx:id="appointmentUpdateEndDateLabel" text="End Date" layoutX="70.0" layoutY="310.0">
+        </Label>
+        <DatePicker fx:id="appointmentUpdateEndDatePicker" layoutX="180.0" layoutY="310.0" prefWidth="210.0" promptText="Date" />
+        <ComboBox fx:id="appointmentUpdateEndComboBox" layoutX="180.0" layoutY="345.0" prefWidth="210.0" promptText="Time" visibleRowCount="5" />
+        <Label fx:id="appointmentUpdateEndTimeLabel" text="End Time" layoutX="70.0" layoutY="345.0">
+        </Label>
+        <Label fx:id="appointmentUpdateCustomerLabel" text="Customer" layoutX="70.0" layoutY="380.0">
+        </Label>
+        <ComboBox fx:id="appointmentUpdateCustomerComboBox" layoutX="180.0" layoutY="380.0" prefWidth="210.0" promptText="Customer" visibleRowCount="5" />
+        <ComboBox fx:id="appointmentUpdateUserComboBox" layoutX="180.0" layoutY="415.0" prefWidth="210.0" promptText="User" visibleRowCount="5" />
+        <Label fx:id="appointmentUpdateUserLabel" text="User" layoutX="70.0" layoutY="415.0">
+        </Label>
+        <Label fx:id="appointmentUpdateContactLabel" text="Contact" layoutX="70.0" layoutY="450.0">
+        </Label>
+        <ComboBox fx:id="appointmentUpdateContactComboBox" layoutX="180.0" layoutY="450.0" prefWidth="210.0" promptText="Contact" visibleRowCount="5" />
+        <Button fx:id="onActionSaveUpdateButton" layoutX="70.0" layoutY="532.0" mnemonicParsing="false" onAction="#onActionSaveUpdatedAppointmentAUC" prefHeight="26.0" prefWidth="80.0" text="Save" />
+        <Button fx:id="onActionCancelUpdateButton" layoutX="180.0" layoutY="532.0" mnemonicParsing="false" onAction="#onActionCancelUpdatedAppointmentAUC" prefHeight="26.0" prefWidth="80.0" text="Cancel" />
+        <Label fx:id="appointmentUpdateHeaderLabel" layoutX="70.0" prefWidth="260.0" layoutY="20.0" text="Update Appointment">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

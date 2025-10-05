@@ -1,0 +1,14 @@
+# Build output
+/target/
+
+# IntelliJ IDEA
+.idea/
+
+# Log files
+login_activity.txt
+
+# OS files
+.DS_Store
+
+# VSCode 
+.vscode/

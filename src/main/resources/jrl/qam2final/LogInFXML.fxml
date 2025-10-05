@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" prefHeight="440.0" prefWidth="1180.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jrl.qam2final.Controller.LogInController">
+    <children>
+        <ScrollPane fx:id="welcomeMessageScrollPane" layoutX="400.0" layoutY="30.0" prefHeight="380.0" prefWidth="720.0" fitToWidth="true" fitToHeight="true">
+            <content>
+                <VBox spacing="10">
+                    <Text fx:id="welcomeMessageText" wrappingWidth="700"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <Label fx:id="logInTitleLabel" layoutX="50.0" layoutY="30.0" prefHeight="24.0" prefWidth="260.0" text="Log-in Screen">
+            <font>
+                <Font size="20"/>
+            </font>
+        </Label>
+        <Label fx:id="userNameLabel" layoutX="50.0" layoutY="130.0" text="Username" />
+        <TextField fx:id="userNameTextField" layoutX="50.0" layoutY="160.0" prefHeight="26.0" prefWidth="170.0" />
+        <Label fx:id="passwordLabel" layoutX="50.0" layoutY="230.0" text="Password" />
+        <PasswordField fx:id="passwordPasswordField" layoutX="50.0" layoutY="260.0" prefHeight="26.0" prefWidth="170.0" />
+        <Label fx:id="systemTimeZoneLabel" layoutX="200.0" layoutY="80.0" text="Country/Division" />
+        <Label fx:id="timeZoneLabel" layoutX="50.0" layoutY="80.0" text="Time Zone:" />
+        <Button fx:id="onActionLogInButton" layoutX="50.0" layoutY="330.0" mnemonicParsing="false" onAction="#onActionLogInLIC" prefHeight="26.0" prefWidth="100.0" text="Log-in" />
+        <Button fx:id="onActionExitButton" layoutX="200.0" layoutY="330.0" mnemonicParsing="false" onAction="#onActionExitLIC" prefHeight="26.0" prefWidth="100.0" text="Exit" />
+    </children>
+</AnchorPane>

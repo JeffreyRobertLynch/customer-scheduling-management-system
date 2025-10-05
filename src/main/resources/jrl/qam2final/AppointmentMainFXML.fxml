@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" prefHeight="560.0" prefWidth="1180.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jrl.qam2final.Controller.AppointmentMainController">
+    <RadioButton fx:id="appointmentWeekRadioButton" mnemonicParsing="false" onAction="#onActionRadioWeekAMC" text="Appointment by Week" layoutX="750.0" layoutY="132.0" toggleGroup="$appointmentRadioToggleGroup">
+        <toggleGroup>
+            <ToggleGroup fx:id="appointmentRadioToggleGroup" />
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="appointmentMonthRadioButton" mnemonicParsing="false" onAction="#onActionRadioMonthAMC" text="Appointment by Month" layoutX="400.0" layoutY="132.0" toggleGroup="$appointmentRadioToggleGroup" />
+    <RadioButton fx:id="appointmentDefaultRadioButton" mnemonicParsing="false" onAction="#onActionRadioDefaultAMC" selected="true" text="All Appointments" layoutX="50.0" layoutY="132.0" toggleGroup="$appointmentRadioToggleGroup" />
+    <Button fx:id="onActionCreateAMCToACCButton" mnemonicParsing="false" onAction="#onActionNavigateAppointmentCreateAMC" prefHeight="26.0" prefWidth="160.0" text="New Appointment" layoutX="40.0" layoutY="72.0" />
+    <Button fx:id="onActionUpdateAMCToAUCButton" mnemonicParsing="false" onAction="#onActionNavigateAppointmentUpdateAMC" prefHeight="26.0" prefWidth="160.0" text="Update Appointment" layoutX="210.0" layoutY="72.0" />
+    <Button fx:id="onActionAppointmentDeleteButton" mnemonicParsing="false" onAction="#onActionDeleteAppointmentAMC" prefHeight="26.0" prefWidth="160.0" text="Delete Appointment" layoutX="380.0" layoutY="72.0" />
+    <TableView fx:id="appointmentMainTableView" layoutX="40.0" layoutY="190.0" prefHeight="310.0" prefWidth="1100.0">
+        <columns>
+            <TableColumn fx:id="appointmentMainIdColumn" prefWidth="110.0" text="Appointment ID" />
+            <TableColumn fx:id="appointmentMainTitleColumn" prefWidth="90.0" text="Title" />
+            <TableColumn fx:id="appointmentMainDescriptionColumn" prefWidth="90.0" text="Description" />
+            <TableColumn fx:id="appointmentMainLocationColumn" prefWidth="90.0" text="Location" />
+            <TableColumn fx:id="appointmentMainTypeColumn" prefWidth="90.0" text="Type" />
+            <TableColumn fx:id="appointmentMainStartDateColumn" prefWidth="90.0" text="Start Date" />
+            <TableColumn fx:id="appointmentMainEndDateColumn" prefWidth="90.0" text="End Date" />
+            <TableColumn fx:id="appointmentMainStartTimeColumn" prefWidth="90.0" text="Start Time" />
+            <TableColumn fx:id="appointmentMainEndTimeColumn" prefWidth="90.0" text="End Time" />
+            <TableColumn fx:id="appointmentMainCustomerIdColumn" prefWidth="90.0" text="Customer ID" />
+            <TableColumn fx:id="appointmentMainUserIdColumn" prefWidth="90.0" text="User ID" />
+            <TableColumn fx:id="appointmentMainContactColumn" prefWidth="90.0" text="Contact" />
+        </columns>
+    </TableView>
+    <Label fx:id="appointmentMainTitleLabel" layoutX="510.0" layoutY="30.0" prefHeight="24.0" prefWidth="260.0" text="Appointment Main">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Button fx:id="onActionAMCToCMCButton" layoutX="640.0" layoutY="72.0" mnemonicParsing="false" onAction="#onActionNavigateCustomerMainAMC" prefHeight="26.0" prefWidth="160.0" text="Customer Main" />
+    <Button fx:id="onActionAMCToRMCButton" layoutX="810.0" layoutY="72.0" mnemonicParsing="false" onAction="#onActionNavigateReportMainAMC" prefHeight="26.0" prefWidth="160.0" text="Reports Main" />
+    <Button fx:id="onActionExitButton" layoutX="980.0" layoutY="72.0" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onActionExitAMC" prefHeight="26.0" prefWidth="160.0" text="Exit" />
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" prefHeight="480.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jrl.qam2final.Controller.ReportMainController">
+    <children>
+        <Label fx:id="reportMainTitleLabel" prefWidth="260"  layoutX="50" layoutY="30" text="Reports Main">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="onActionRMCToContactScheduleButton" layoutX="50" layoutY="100" onAction="#onActionNavigateReportContactScheduleRMC" prefHeight="26.0" prefWidth="180.0" text="Contact Schedule" />
+        <ScrollPane fx:id="contactScheduleScrollPane" prefWidth="320" layoutX="250" layoutY="100" fitToWidth="true" fitToHeight="true">
+            <content>
+                <Label fx:id="contactScheduleScrollPaneLabel" text="Generate Appointment Schedules for Contacts." wrapText="true" />
+            </content>
+        </ScrollPane>
+        <Button fx:id="onActionRMCToContactMonthButton" layoutX="50" layoutY="150" onAction="#onActionNavigateReportContactMonthlyRMC" prefHeight="26.0" prefWidth="180.0" text="Contact and Month" />
+        <ScrollPane fx:id="contactMonthScrollPane" prefWidth="320" layoutX="250" layoutY="150" fitToWidth="true" fitToHeight="true">
+            <content>
+                <Label fx:id="contactMonthScrollPaneLabel" text="Generate a report categorizing Appointments by Month and Contact." wrapText="true" />
+            </content>
+        </ScrollPane>
+        <Button fx:id="onActionRMCToTypeMonthButton" layoutX="50" layoutY="200" onAction="#onActionNavigateReportTypeMonthlyRMC" prefHeight="26.0" prefWidth="180.0" text="Type and Month" />
+        <ScrollPane fx:id="typeMonthScrollPane" prefWidth="320" layoutX="250" layoutY="200" fitToWidth="true" fitToHeight="true">
+            <content>
+                <Label fx:id="typeMonthScrollPaneLabel" text="Generate a report categorizing Appointments by Month and Type." wrapText="true" />
+            </content>
+        </ScrollPane>
+        <Button fx:id="onActionRMCToCustomerMonthButton" layoutX="50" layoutY="250" onAction="#onActionNavigateReportCustomerMonthlyRMC" prefHeight="26.0" prefWidth="180.0" text="Customer and Month" />
+        <ScrollPane fx:id="customerMonthScrollPane" prefWidth="320" layoutX="250" layoutY="250" fitToWidth="true" fitToHeight="true">
+            <content>
+                <Label fx:id="customerMonthScrollPaneLabel" text="Generate a report categorizing Appointments by Month and Customer." wrapText="true" />
+            </content>
+        </ScrollPane>
+        <Button fx:id="onActionRMCToAppointmentMainButton" layoutX="200" layoutY="30" onAction="#onActionNavigateAppointmentMainRMC" prefHeight="26.0" prefWidth="130.0" text="Appointment Main" />
+        <Button fx:id="onActionRMCToCustomerMainButton" layoutX="340" layoutY="30" onAction="#onActionNavigateCustomerMainRMC" prefHeight="26.0" prefWidth="130.0" text="Customer Main" />
+        <Button fx:id="onActionExitRMCButton" layoutX="480" layoutY="30" onAction="#onActionExitRMC" prefHeight="26.0" prefWidth="130.0" text="Exit" />
+        <ScrollPane fx:id="comingSoonScrollPane" layoutX="50" layoutY="350" fitToWidth="true" fitToHeight="true">
+            <content>
+                <Label fx:id="comingSoonScrollPaneLabel" prefWidth="180" text="More Reports Coming Soon!" wrapText="true" />
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>
