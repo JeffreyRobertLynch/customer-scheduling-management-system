@@ -1,6 +1,6 @@
 # Customer-Scheduling-Management-System
 
-## Context
+## Retrospective - 10/4/2025
 This student project was completed 4/14/2024, as part of Software 2: Advanced Java Concepts. It is preserved here to demonstrate full-stack development and foundational software engineering skills with historical accuracy.
 
 ## Awards
